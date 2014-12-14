@@ -8,3 +8,9 @@ Feature:
 - Export selected information and arrange by selected column (example: Export name + extension and sort by name)
 - Search for individual by name, ext, or any of the personal information in list
 - Export and print a map of the office with first names on the map itself (for printing purposes)
+
+Screenshots:
+!(https://i.imgur.com/TfIYguB.png)
+!(http://i.imgur.com/1GwUbeu.jpg)
+!(http://i.imgur.com/ulzjhko.jpg)
+!(http://i.imgur.com/HCQEKHl.jpg)
