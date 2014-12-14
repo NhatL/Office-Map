@@ -26,12 +26,8 @@
 	</a>
 	
 	<div class="tabber">
-		<div class="tabbertab" title="7th Floor">
-            <img id="floor7" src="Floor7.jpg" alt="Floor7" usemap="#Floor7" />
-			<br />
-		</div>
-		<div class="tabbertab" title="8th Floor">
-            <img id="floor8" src="Floor8.jpg" alt="Floor8" usemap="#Floor8" />
+		<div class="tabbertab" title="1st Floor">
+            <img id="floor1" src="Floor1.jpg" alt="Floor1" usemap="#Floor1" />
 			<br />
 		</div>
 		<div class="tabbertab" title="Download Full List">
@@ -54,7 +50,7 @@
 							<input type="checkbox" name="Exporter" value="NameT">Name<br>
 							<input type="checkbox" name="Exporter" value="ExtT">Extension<br>
 							<input type="checkbox" name="Exporter" value="Det">Department<br>							
-							<input type="checkbox" name="Exporter" value="FobT">FOB<br>
+							<input type="checkbox" name="Exporter" value="Extra2T">FOB<br>
 							<input type="checkbox" name="Exporter" value="DeskT">Desk Key Number<br>
 						</td>
 						<td style="font-size:20px">
@@ -62,7 +58,7 @@
 							<input type="radio" name="Exporter" value="Name">Name<br>
 							<input type="radio" name="Exporter" value="Ext">Extension<br>
 							<input type="radio" name="Exporter" value="Det">Department<br>		
-							<input type="radio" name="Exporter" value="Fob">FOB<br>
+							<input type="radio" name="Exporter" value="Extra2">FOB<br>
 							<input type="radio" name="Exporter" value="Desk">Desk Key Number<br/>
 							
 							<input type="checkbox" name="Exporter" value="Checked">Include empty seats in output<br /><br />
@@ -93,7 +89,7 @@
 							<input type="radio" name="Radioo" value="Seat" checked="checked">Seat<br>
 							<input type="radio" name="Radioo" value="Name">Name<br>
 							<input type="radio" name="Radioo" value="Ext">Extension<br>
-							<input type="radio" name="Radioo" value="Fob">FOB<br>
+							<input type="radio" name="Radioo" value="Extra2">FOB<br>
 							<input type="radio" name="Radioo" value="Desk">Desk Key Number<br /><br />
 							<div class = "buttonc">
 								<input type="Button" value="Submit" onclick="search(this.form)" id="submit" />
@@ -176,8 +172,8 @@
 					toolTip: 	"<b>Name:</b> " + name + 
 								"<br /><b>Extension:</b> " + ext + 
 								"<br /><b>Department:</b> " + det + 
-								"<br /><b>Seat Number:</b> " + keye + 
-								"<br /><b>Fob:</b> " + fob + 
+								"<br /><b>Extra1:</b> " + keye + 
+								"<br /><b>Extra2:</b> " + fob + 
 								"<br /><b>Desk Key number:</b> " + desk
 
 					}]
@@ -196,8 +192,8 @@
 		document.getElementById(resultdiv).innerHTML=	"<b>Name:</b> " + name + 
 														"<br /><b>Extension:</b> " + ext + 
 														"<br /><b>Department:</b> " + det + 
-														"<br /><b>Seat Number:</b> " + seat + 
-														"<br /><b>Fob:</b> " + fob + 
+														"<br /><b>Extra1:</b> " + seat + 
+														"<br /><b>Extra2:</b> " + fob + 
 														"<br /><b>Desk Key number:</b> " + desk + "<hr />";
 	}
 	
@@ -326,13 +322,13 @@
 				var linebreak = document.createElement('br');
 				para.appendChild(linebreak);
 				
-				para.appendChild(boldHTML("Seat Number: "));
+				para.appendChild(boldHTML("Extra1: "));
 				node = document.createTextNode(seat);
 				para.appendChild(node);				
 				var linebreak = document.createElement('br');
 				para.appendChild(linebreak);
 				
-				para.appendChild(boldHTML("Fob: "));
+				para.appendChild(boldHTML("Extra2: "));
 				node = document.createTextNode(fob);
 				para.appendChild(node);				
 				var linebreak = document.createElement('br');
