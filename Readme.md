@@ -10,7 +10,11 @@ Feature:
 - Export and print a map of the office with first names on the map itself (for printing purposes)
 
 Screenshots:
+
 ![Map overlay](https://i.imgur.com/TfIYguB.png)
-![Export Data][(http://i.imgur.com/1GwUbeu.jpg)
+
+![Export Data](http://i.imgur.com/1GwUbeu.jpg)
+
 ![Search](http://i.imgur.com/ulzjhko.jpg)
+
 ![Names](http://i.imgur.com/HCQEKHl.jpg)
