@@ -11,13 +11,13 @@
 <link rel="stylesheet" href="./Required/style.css" type="text/css" media="screen" />
 
 <script type="text/javascript">
-	var listurl = "https://raw.githubusercontent.com/NhatL/Office-Map/master/Desk%20Info.csv";
+	var listurl = "https://dl.dropboxusercontent.com/s/wof9vrfz2737vdq/DeskInfoDrop.csv?dl=1";
 	var numcol = 6;
 </script>
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>Procom Toronto Office Map</title>
+	<title>Office Map</title>
 </head>
 
 <body>
@@ -50,7 +50,7 @@
 							<input type="checkbox" name="Exporter" value="NameT">Name<br>
 							<input type="checkbox" name="Exporter" value="ExtT">Extension<br>
 							<input type="checkbox" name="Exporter" value="Det">Department<br>							
-							<input type="checkbox" name="Exporter" value="Extra2T">FOB<br>
+							<input type="checkbox" name="Exporter" value="FobT">FOB<br>
 							<input type="checkbox" name="Exporter" value="DeskT">Desk Key Number<br>
 						</td>
 						<td style="font-size:20px">
@@ -58,7 +58,7 @@
 							<input type="radio" name="Exporter" value="Name">Name<br>
 							<input type="radio" name="Exporter" value="Ext">Extension<br>
 							<input type="radio" name="Exporter" value="Det">Department<br>		
-							<input type="radio" name="Exporter" value="Extra2">FOB<br>
+							<input type="radio" name="Exporter" value="Fob">FOB<br>
 							<input type="radio" name="Exporter" value="Desk">Desk Key Number<br/>
 							
 							<input type="checkbox" name="Exporter" value="Checked">Include empty seats in output<br /><br />
@@ -89,7 +89,7 @@
 							<input type="radio" name="Radioo" value="Seat" checked="checked">Seat<br>
 							<input type="radio" name="Radioo" value="Name">Name<br>
 							<input type="radio" name="Radioo" value="Ext">Extension<br>
-							<input type="radio" name="Radioo" value="Extra2">FOB<br>
+							<input type="radio" name="Radioo" value="Fob">FOB<br>
 							<input type="radio" name="Radioo" value="Desk">Desk Key Number<br /><br />
 							<div class = "buttonc">
 								<input type="Button" value="Submit" onclick="search(this.form)" id="submit" />
@@ -107,6 +107,7 @@
 		</div>
 	</div>
 </body>
+
 
 <script type="text/javascript">
 	var data = [];
@@ -172,8 +173,8 @@
 					toolTip: 	"<b>Name:</b> " + name + 
 								"<br /><b>Extension:</b> " + ext + 
 								"<br /><b>Department:</b> " + det + 
-								"<br /><b>Extra1:</b> " + keye + 
-								"<br /><b>Extra2:</b> " + fob + 
+								"<br /><b>Seat Number:</b> " + keye + 
+								"<br /><b>Fob:</b> " + fob + 
 								"<br /><b>Desk Key number:</b> " + desk
 
 					}]
@@ -192,8 +193,8 @@
 		document.getElementById(resultdiv).innerHTML=	"<b>Name:</b> " + name + 
 														"<br /><b>Extension:</b> " + ext + 
 														"<br /><b>Department:</b> " + det + 
-														"<br /><b>Extra1:</b> " + seat + 
-														"<br /><b>Extra2:</b> " + fob + 
+														"<br /><b>Seat Number:</b> " + seat + 
+														"<br /><b>Fob:</b> " + fob + 
 														"<br /><b>Desk Key number:</b> " + desk + "<hr />";
 	}
 	
@@ -322,13 +323,13 @@
 				var linebreak = document.createElement('br');
 				para.appendChild(linebreak);
 				
-				para.appendChild(boldHTML("Extra1: "));
+				para.appendChild(boldHTML("Seat Number: "));
 				node = document.createTextNode(seat);
 				para.appendChild(node);				
 				var linebreak = document.createElement('br');
 				para.appendChild(linebreak);
 				
-				para.appendChild(boldHTML("Extra2: "));
+				para.appendChild(boldHTML("Fob: "));
 				node = document.createTextNode(fob);
 				para.appendChild(node);				
 				var linebreak = document.createElement('br');
@@ -499,11 +500,12 @@
     }
 </script>
 
+
 <map id="Floor1" name="Floor1">
-	<area shape="rect" name="D1" title="D1" coords="32,17,121,105" href="" target="" />
-	<area shape="rect" name="D2" title="D2" coords="124,19,213,104" href="" target="" />
-	<area shape="rect" name="D3" title="D3" coords="217,18,307,104" href="" target="" />
-	<area shape="rect" name="D4" title="D4" coords="30,135,120,221" href="" target="" />
-	<area shape="rect" name="D5" title="D5" coords="126,136,211,222" href="" target="" />
-	<area shape="rect" name="D6" title="D6" coords="217,136,306,222" href="" target="" />
+	<area shape="rect" name="D1" title="D1" coords="32,17,121,105" href="#" target="" />
+	<area shape="rect" name="D2" title="D2" coords="124,19,213,104" href="#" target="" />
+	<area shape="rect" name="D3" title="D3" coords="217,18,307,104" href="#" target="" />
+	<area shape="rect" name="D4" title="D4" coords="30,135,120,221" href="#" target="" />
+	<area shape="rect" name="D5" title="D5" coords="126,136,211,222" href="#" target="" />
+	<area shape="rect" name="D6" title="D6" coords="217,136,306,222" href="#" target="" />
 </map>
