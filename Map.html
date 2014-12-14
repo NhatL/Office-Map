@@ -50,16 +50,16 @@
 							<input type="checkbox" name="Exporter" value="NameT">Name<br>
 							<input type="checkbox" name="Exporter" value="ExtT">Extension<br>
 							<input type="checkbox" name="Exporter" value="Det">Department<br>							
-							<input type="checkbox" name="Exporter" value="FobT">FOB<br>
-							<input type="checkbox" name="Exporter" value="DeskT">Desk Key Number<br>
+							<input type="checkbox" name="Exporter" value="Extra1T">Extra1<br>
+							<input type="checkbox" name="Exporter" value="Extra2T">Extra2<br>
 						</td>
 						<td style="font-size:20px">
 							<input type="radio" name="Exporter" value="Seat" checked="checked">Seat<br>
 							<input type="radio" name="Exporter" value="Name">Name<br>
 							<input type="radio" name="Exporter" value="Ext">Extension<br>
 							<input type="radio" name="Exporter" value="Det">Department<br>		
-							<input type="radio" name="Exporter" value="Fob">FOB<br>
-							<input type="radio" name="Exporter" value="Desk">Desk Key Number<br/>
+							<input type="radio" name="Exporter" value="Extra1">Extra1<br>
+							<input type="radio" name="Exporter" value="Desk">Extra2<br/>
 							
 							<input type="checkbox" name="Exporter" value="Checked">Include empty seats in output<br /><br />
 							<div class = "buttonc">
@@ -89,8 +89,8 @@
 							<input type="radio" name="Radioo" value="Seat" checked="checked">Seat<br>
 							<input type="radio" name="Radioo" value="Name">Name<br>
 							<input type="radio" name="Radioo" value="Ext">Extension<br>
-							<input type="radio" name="Radioo" value="Fob">FOB<br>
-							<input type="radio" name="Radioo" value="Desk">Desk Key Number<br /><br />
+							<input type="radio" name="Radioo" value="Extra1">Extra1<br>
+							<input type="radio" name="Radioo" value="Desk">Extra2<br /><br />
 							<div class = "buttonc">
 								<input type="Button" value="Submit" onclick="search(this.form)" id="submit" />
 							</div>
@@ -174,8 +174,8 @@
 								"<br /><b>Extension:</b> " + ext + 
 								"<br /><b>Department:</b> " + det + 
 								"<br /><b>Seat Number:</b> " + keye + 
-								"<br /><b>Fob:</b> " + fob + 
-								"<br /><b>Desk Key number:</b> " + desk
+								"<br /><b>Extra1:</b> " + fob + 
+								"<br /><b>Extra2:</b> " + desk
 
 					}]
 				});
@@ -194,8 +194,8 @@
 														"<br /><b>Extension:</b> " + ext + 
 														"<br /><b>Department:</b> " + det + 
 														"<br /><b>Seat Number:</b> " + seat + 
-														"<br /><b>Fob:</b> " + fob + 
-														"<br /><b>Desk Key number:</b> " + desk + "<hr />";
+														"<br /><b>Extra1:</b> " + fob + 
+														"<br /><b>Extra2:</b> " + desk + "<hr />";
 	}
 	
 	function download(){
@@ -329,13 +329,13 @@
 				var linebreak = document.createElement('br');
 				para.appendChild(linebreak);
 				
-				para.appendChild(boldHTML("Fob: "));
+				para.appendChild(boldHTML("Extra1: "));
 				node = document.createTextNode(fob);
 				para.appendChild(node);				
 				var linebreak = document.createElement('br');
 				para.appendChild(linebreak);
 				
-				para.appendChild(boldHTML("Desk Key Number: "));
+				para.appendChild(boldHTML("Extra2: "));
 				node = document.createTextNode(desk);
 				para.appendChild(node);				
 				var linebreak = document.createElement('br');
